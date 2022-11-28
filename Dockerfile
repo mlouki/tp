@@ -1,5 +1,5 @@
-FROM python:3.9
+FROM python
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY chayma.py .
-CMD ["python", "chayma.py"]
+CMD ["python3", "chayma.py"]
